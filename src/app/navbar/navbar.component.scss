@@ -1,0 +1,156 @@
+.logo {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #666;
+    text-decoration: none;
+}
+
+.logo i {
+    padding-right: 0.2rem;
+    color: #FC8621;
+}
+
+.icons {
+    display: flex
+}
+
+.icons i {
+    font-size: 20px;
+    padding-right: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.icons i:hover {
+    color: #FC8621;
+    transform: scale(1.2, 1.2);
+}
+
+nav {
+    display: inline;
+}
+
+.nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 10px;
+    display: inline;
+    color: #666;
+    position: relative;
+    transition: all 0.8s;
+}
+
+.activebutton {
+    background-color: #FC8621;
+    border-radius: 20px;
+    color: #fff;
+    
+}
+
+
+
+.nav-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -25px;
+    height: 3px;
+    width: 100%;
+    background-color: chocolate;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform 0.5s linear;
+}
+
+.nav-link:hover:before {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+
+.btn
+{
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    height: 3px;
+    width: 100%;
+    background-color: chocolate;
+
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px 60px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    z-index: 999;
+}
+
+#menu-bar {
+    font-size: 30px;
+    cursor: pointer;
+    color: #666;
+    padding: 5px;
+    display: none;
+}
+
+@media (max-width:768px) {
+    header {
+        padding: 20px 12px;
+    }
+    .logo {
+        font-size: 28px;
+    }
+    .icons i {
+        font-size: 19px;
+    }
+    #menu-bar {
+        display: initial;
+    }
+    nav a {
+        margin: 20px;
+        padding: 20px;
+        display: block;
+        border: 2px solid rgba(0, 0, 0, .1);
+        border-left: 4px solid chocolate;
+    }
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 1000px;
+        right: 0;
+        background: #f7f7ff;
+        border-top: 2px solid rgba(0, 0, 0, .1);
+    }
+    .nav-link::before {
+        bottom: -1px;
+    }
+}
+.MuiTypography-root
+{
+    margin-top: 0px !important;
+    font-size: 40px;
+    font-family: Birthstone , cursive;
+    font-weight: bold;
+    color: #FC8621 !important;
+    cursor: pointer;
+}
+
+.number
+{
+    background-color: #FC8621;
+    min-height: 18px;
+    min-width: 18px;
+    
+    position: absolute;
+    right: 5px;
+    top: 0;
+    border-radius: 50%;
+}

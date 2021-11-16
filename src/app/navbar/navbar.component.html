@@ -1,0 +1,34 @@
+<header>
+
+    <h4  routerLink="/home" class="MuiTypography-root MuiTypography-body1 MuiTypography-colorSecondary">Fast food</h4>
+
+    <nav id="menu">
+        <a class="nav-link " routerLink="/home" routerLinkActive="activebutton" >Home</a>
+        <!-- <a class="nav-link" routerLink="/" routerLinkActive="router-link-active">About</a> -->
+        <a class="nav-link" routerLink="/prodcuts" routerLinkActive="activebutton">OurService</a>
+        <a class="nav-link" routerLink="/contact" routerLinkActive="activebutton">Contact</a>
+    </nav>
+
+
+
+    <div class="icons ml-auto">
+        <div class="search pt-2">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="cart pt-2 position-relative">
+            <div class="number text-white text-center">{{itemsNum}}</div>
+            <i routerLink="/cart" class="fas fa-cart-arrow-down"></i>
+        </div>
+
+        <div class="sign pt-2">
+            <i routerLink="/login" class="fas fa-user-plus"></i>
+        </div>
+
+        <div  id="menu-bar" class="fas fa-bars"></div>
+        <!-- <i class="fas fa-times"></i> -->
+
+    </div>
+
+
+</header>

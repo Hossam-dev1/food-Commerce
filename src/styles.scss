@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.5s linear;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    color: #fff;
+    overflow: hidden;
+    overflow-x: hidden !important;
+}
+
+
+.home {
+    background: url(assets/images/home-bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home img
+{
+    width: 100%;
+    padding: 10px;
+    animation: float 3s linear infinite;
+}
+@keyframes float
+{
+    0%, 100%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(40px);
+    }
+}
+.home h3 , .about h3
+{
+    font-size: 35px !important;
+    font-weight: 600;
+    
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 10px 8px;
+    border: 2px solid coral !important;
+    color: #666;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    border: 6px;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.btn:hover
+{
+    transform: scale(1.06,1.06);
+    border-radius: 6px;
+    background-color: #FC8621;
+    
+}
+
+//-----------Media quierys ---------\\
+
+@media (max-width:768px)
+{
+    .home h3 , .about h3
+    {
+        font-size: 23px !important;
+        margin-top: 50px;
+        
+    }
+    p
+    {
+        font-size: 14px;
+    }
+    .home img
+    {
+        width: 85% !important;
+        margin: 20px ;
+    }
+    .btn
+    {
+        padding: 7px 4px;
+        font-size: 16px;
+        
+    }
+    .fixed-bg p
+    {
+        width: 70% !important;
+    }
+    .products img
+    {
+        width: 70% !important;
+    }
+    .slider-product img
+    {
+        width: 8rem;
+        height: 14rem;
+    }
+    .slider-product h3
+    {
+        padding-top: 40px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+///////about\\\\\
+
+.about img
+{
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+///Service\\\
+
+
+.service 
+{
+    background: url(assets/images/1.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+h2
+{
+    font-weight: bolder !important;
+    color: #666;
+    text-align: center;
+}
+span
+{
+    color: #FC8621;
+    border-bottom: 2px solid goldenrod;
+    border-radius: 20%;
+}
+.service .box
+{
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
+    border: 2px  solid rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+}
+.service .box .content
+{
+    text-align: center;
+    padding: 20px 8px;
+    background-color: #fff;
+    color: #666 ;
+    
+}
+.service .box .content img
+{
+    width: 12%;
+}
+.service .box .content h3
+{
+    font-weight: bolder;
+    
+}
+
+.service .main-img 
+{
+    position: absolute;
+    padding: 14px 0px;
+    border-radius: 2%;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s linear;
+}
+.service .box:hover .main-img 
+{
+    top: 0%;
+}
+.service  .main-btn
+{   
+    position: absolute;
+    bottom: -50%;
+    left: 34%;
+    opacity: 0;
+    transition: bottom 1.6s,transform 0.8s ,background-color 0.8s ;
+
+}
+.service .box:hover  .main-btn
+{
+    opacity: 1;
+    bottom:-1%;
+    border-radius: 20%;
+}
+
+
+//--------bg-----------\\
+
+.fixed-bg
+{
+    background-image: url(assets/images/engin-akyurt-IfAb0bjhHlc-unsplash.jpg);
+    background-size:  cover;
+    min-height: 50vh;
+    background-attachment: fixed;
+}
+.fixed-bg h3
+{   color: #fff;
+
+}
+.fixed-bg .container
+{
+    z-index: 999 !important;
+    color: #fff !important;
+}
+
+.slider-product
+{
+    background-image: url(assets/images/home-bg.jpg);
+    padding: 60px 0 !important;
+} 
+
+// ------------- Slider --------------- \\
+
+
+
+.slider-product  h3
+{
+    background: -webkit-linear-gradient(#eee, rgb(80, 79, 79));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    margin-top: -20px !important;
+}
+
+.owl-theme .owl-nav [class*=owl-] 
+{
+    color: saddlebrown !important;
+    font-weight: 900;
+    font-size: 20px;
+}
+.slider-product .all .content
+{
+    background-color: #29221b !important;
+    height: 11rem;
+    border-radius: 8%;
+}
+.slider-product .price
+{
+    background-color: salmon;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 25px;
+    min-width: 35px;
+    border-bottom-right-radius: 20% !important;
+    border-top-left-radius: 20% !important;
+
+    text-align: center;
+}
+// --------- Reviews ----------- \\
+
+
+.review
+{
+    background-image: url(assets/images/5.png);
+    background-size: cover;
+}
+.review .box
+{
+    background-color: #333;
+    text-align: center;
+    padding: 30px;
+    margin: 60px 0;
+
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4);
+    border:  8px solid #fff;
+    cursor: pointer;
+    
+    position: relative;
+    transition: all 0.8s;
+
+}
+.review .box:hover
+{
+    transform: translateY(-25px);
+}
+.review .box img
+{
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    // object-fit: cover;
+    margin-top: -8rem;   
+    border: 0.3rem solid #fff;
+
+}
+
+.review .box .stars i
+{
+    color:#FC8621 ;
+    padding: 2px;
+    opacity: 0;
+    position: relative;
+    left: -50%;
+    transition: all 0.6s;
+}
+.review .box:hover i 
+{
+    opacity: 1;
+    left: 0%;
+}
+
+
+.MuiTypography-root
+{
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: Birthstone , cursive;
+    font-weight: bold;
+    color: #FC8621 !important;
+}
+
+//---------Our products --------\\
+
+.ourProducts
+{
+    background-image: url(assets/images/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg);
+    background-size: cover;
+    min-height: 80vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.layer
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 100%;
+    position: absolute;
+    left: 0; right: 0;
+    top: 0;
+}
+.ourProducts h4 ,h1
+{
+    color: #fff !important;
+    font-weight: 600;
+    
+}
+.ourProducts h1
+{
+    font-size: 50px !important;
+}
+.ourProducts .food
+{
+    color: #FC8621 !important;
+    font-family: Birthstone , cursive;
+    font-size: 40px !important;
+    
+}
+.container
+{
+    z-index: 55;
+}
+
+
+//----------Products------\\
+
+.products h3
+{
+    text-align: center;
+    color: #666;
+    padding:  50px 0;
+    font-weight: bold;
+}
+.products button
+{
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+    background-color: transparent !important;
+    font-size: 18px;
+    transition: all 0.6s;
+}
+.products .fs-6
+{
+    margin-left: 15px;
+}
+.products img
+{
+    height: 250px;
+}
+
+.loader-container
+{
+    background-color: #fff !important;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999955416;
+    position: fixed;
+    left: 0; right: 0; top: 0;
+}
+
+/////login\\\\\\\\\
+
+
+form .container
+{   margin-top: 70px;
+    background-color: #29221b;
+    min-height: 500px;
+    width: 350px;
+    padding: 35px;
+    border-radius: 25px;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+}
+form h1 
+{
+    color: #FC8621 !important;
+}
+label
+{
+    float: left ;
+    color: #999;
+}
+.signup
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 0;
+}
+.signup:hover
+{
+    color: #FC8621;
+}
+
+.slick-next:before, .slick-prev:before
+{
+    color: #FC8621 !important;
+    font-size: 40px !important;
+    z-index: 99;
+}
+.slick-prev:before
+{
+    position: relative;
+    
+}
+.slick-next:before
+{
+    position: relative;
+    right: 20px;
+}
+
+.slick-dots li button:before 
+{
+    font-size: 10px !important;
+    color: chocolate;
+    padding-top: 20px;
+}

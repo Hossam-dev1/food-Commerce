@@ -1,0 +1,50 @@
+<section class="cart ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 position-relative ">
+                <table class="">
+                    <thead class="">
+                        <tr  class="text-center  " >
+                            <th>IMAGE</th>
+                            <th>PRODUCT NAME</th>
+                            <th>PRICE</th>
+                            <th>quantity</th>
+                            <th>SUBTOTAL</th>
+                            <th>DELETE</th>
+                            <hr>
+                        </tr>
+                        <div class="brdr"></div>
+                    </thead>
+                    
+                    <tbody class="mb-5">
+                        <tr *ngFor="let item of cartMeals; let i = index" class="text-center mb-sm-3 ">
+                            
+                            <td><img src="{{item?.image_url}}{{item?.image}}" class="img-fluid mt-4" alt=""></td>
+                            <td>{{item.title}}</td>
+                            <td >{{item.price}}</td>
+                            <td><i class="fas fa-minus" (click)="decremnetQty(item)"></i> <span class="px-2">{{item?.quantity}}</span> <i class="fas fa-plus" (click)="incrementQty(item)"></i></td>
+                            <td>{{item?.price * item?.quantity}}</td>
+                            <td><button type="submit" (click)="deleteItem(i)" class=""><i class="fas fa-trash-alt deBtn btn btn-danger text-white"></i></button> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3 mt-5   ">
+                <div class="details ">
+                    <h3>Cart Totals</h3>
+                    <hr>
+                    <h4>Subtotal= {{totalPrice}} $ </h4>
+                    <hr>
+                    <h4>Taxs = 20$</h4>
+                    <hr>
+                    <h4>Total Order = {{totalPrice + 20}} $ </h4>
+                    <hr>
+
+                    <button type="submit" class="btn btn-outline-success w-100">PROCED TO CHECKOUT</button>
+    
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+</section>

@@ -1,0 +1,56 @@
+body
+{
+    position: relative;
+}
+footer
+{
+    background-color: #29221b;
+    margin-top: 150px;
+    
+    
+}
+
+.firstLine 
+{
+    display: flex;
+    justify-content: space-between;
+    color: #FC8621;
+}
+footer .fab
+{
+    color: #FC8621 !important;
+    font-size: 30px !important;
+    margin-right: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+footer .fab:hover
+{
+    transform: scale(1.2,1.2);
+}
+// .MuiTypography-root
+// {
+//     margin-top: 15px;
+//     font-size: 50px;
+//     font-family: Birthstone , cursive;
+//     font-weight: bold;
+//     color: #FC8621 !important;
+// }
+footer .link
+{
+    cursor: pointer;
+    transition: all 0.6s;
+}
+footer .link:hover
+{
+    color:#FC8621 ;
+}
+@media (max-width:900px)
+{
+    .media
+    {
+        text-align: center;
+        padding-bottom: 10px !important;
+    }
+}

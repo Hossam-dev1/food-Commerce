@@ -1,0 +1,83 @@
+<section class="ourProducts " id="home">
+    <div class="layer"></div>
+
+    <div class="container ">
+
+        <div class="row ">
+            <div class="col-md-12 d-flex align-items-center">
+
+                <div class="content text-muted pt-5  ">
+                    <h4 class="h4 food">Food</h4>
+                    <h1 class="py-2 ">Our <span>Special</span> Dishes</h1>
+
+                    <a href="#" class="btn btn-outline-danger text-white ">See now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="products">
+    <h3>OUR <span>PRODUCTS</span></h3>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="item">
+                    <h4 class="text-center text-dark">Categories</h4>
+                    <div class="links text-dark">
+                        <!-- <button class="move" (click)="getType('pizza')">Pizza</button>
+                        <button class="move" (click)="getType('beef')">Beef</button>
+                        <button class="move" (click)="getType('salad')">Salad</button>
+                        <button class="move" (click)="getType('pasta')">Pasta</button> -->
+                        <h6 class="m-3  text-danger">Special Pasta</h6>
+
+                        <button class="fs-6 move" (click)="getPasta('Chicken Paste')">Chicken Paste</button>
+                        <button class="fs-6 move" (click)="getPasta('Penne Ala Vodka')">Penne Ala Vodka</button>
+                        <button class="fs-6 move" (click)="getPasta('Spaghetti Bolognese')">Spaghetti Bolognese</button>
+                        <button class="fs-6 move" (click)="getPasta('Ravioli with Coconut Milk')">Ravioli with Coconut
+                            Milk</button>
+                        <button class="fs-6 move" (click)="getPasta('Home-Style Baked Pasta')">Home-Style Baked
+                            Pasta</button>
+                        <button class="fs-6 move" (click)="getPasta('Pasta Con Pomodoro E Basilico')">Pasta Con E
+                            Basilico</button>
+                        <button class="fs-6 move" (click)="getPasta('Gnocchi with Tomato Sauce')">Gnocchi with Tomato
+                            Sauce</button>
+                        <button class="fs-6 move" (click)="getPasta('Pasta Carbonara')">Pasta Carbonara</button>
+                        <button class="fs-6 move" (click)="getPasta('Four Cheese Pasta')">Four Cheese Pasta</button>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="row  ">
+                    <div *ngFor="let meal of allMeals" class="col-md-4  bg-light mb-3" >
+
+                        <div class="box position-relative " data-aos="zoom-in-up">
+                            <div class="price">{{meal?.price}}$</div>
+                            <img src="{{meal?.image_url}}{{meal?.image}}" class="img-fluid w-100" alt="">
+                            <h3 class="pt-sm-5 fs-5">{{meal?.title}}</h3>
+                            <a (click)="setInCart(meal)" class="btn btn-outline-danger p-3 main-btn text-white mt-2  ">Order now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<div class="loader-container">
+    <img src="../../assets/images/loader.gif" alt="">
+</div>

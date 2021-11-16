@@ -1,0 +1,76 @@
+.cart
+{
+    padding-top: 130px !important;
+}
+.cart img
+{
+    height: 7rem;
+    width:11rem;
+    border-radius: 50%;
+    
+}
+.cart th ,td
+{
+    padding:0 40px;
+}
+.cart  th
+{
+    font-size: 14px;
+    color: #666;
+}
+.cart td
+{
+    color: #444;
+    font-weight: 600;
+}
+.cart .brdr
+{
+    width: 90%;
+    height: 1px;
+    background-color: burlywood;
+    position: absolute;
+    left: 6%;
+}
+tr .deBtn , td i
+{
+    cursor: pointer;
+}
+tr .deBtn 
+{
+    background-color: crimson !important;
+    width: 40px;
+    font-size: 23px;
+}
+.cart td i
+{
+    font-size: 12px !important;
+
+}
+.cart .details
+{
+    background-color: #29221b;
+    padding: 20px;
+}
+
+@media(max-width:900px)
+{
+    thead 
+    {
+        display: none ;
+    }
+    
+    tbody tr td
+    {
+        display: block !important;
+        padding: 10px 150px;
+        
+    }
+    tbody tr 
+    {
+        background-color: white;
+        border: 2px solid gray;
+        margin-bottom: 10px !important;
+    }
+
+}
+

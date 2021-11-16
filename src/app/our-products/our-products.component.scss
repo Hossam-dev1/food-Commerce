@@ -1,0 +1,73 @@
+
+.products .move:hover
+{
+    color: chocolate;
+    transform: translateX(15px);
+}
+
+.box
+{
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+    background-color: #29221b;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    min-height: 100%;
+    min-width: 100%;
+    text-align: center !important;
+    border-radius: 5%;
+    
+}
+.products .box img
+{
+    width: 100% !important;
+    height: 12rem !important;
+    transition: all 0.7s;
+    border-radius: 4%;
+    position: relative;
+}
+.products .box h3
+{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.products .box img:hover
+{
+    transform: scale(1.15);
+}
+.products .price 
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: chocolate;
+    width: 35px;
+    height: 30px;
+    padding: 3px;
+    border-bottom-right-radius: 10px;
+    z-index: 55;
+}
+
+.products h3
+{
+    margin-top: -15px !important;
+    margin-bottom: 50px !important;
+}
+.products .main-btn
+{
+    position: absolute;
+    bottom: 0%;
+    left: 31%;
+    transition: all 0.6s !important;
+    border-radius: 6%;
+    color: gainsboro !important;
+    margin: 20px 0 !important;
+}
+
+// .products .fas
+// {
+//     position: relative;
+//     left: 50%;
+//     color: #777;
+// }
